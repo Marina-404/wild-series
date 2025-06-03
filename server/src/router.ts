@@ -1,5 +1,4 @@
 import express from "express";
-
 const router = express.Router();
 
 /* ************************************************************************* */
@@ -14,5 +13,8 @@ router.get("/api/items/:id", itemActions.read);
 router.post("/api/items", itemActions.add);
 
 /* ************************************************************************* */
+import programActions from "./modules/item/programActions";
+
+router.get("/api/programs", programActions.browse);
 
 export default router;

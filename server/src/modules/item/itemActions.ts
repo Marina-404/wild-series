@@ -1,5 +1,11 @@
 import type { RequestHandler } from "express";
 
+// B - BROWSE
+// R - READ
+// E - EDIT
+// A - ADD
+// D - DESTROY
+
 // Import access to data
 import itemRepository from "./itemRepository";
 

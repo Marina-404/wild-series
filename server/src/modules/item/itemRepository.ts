@@ -11,6 +11,11 @@ type Item = {
 class ItemRepository {
   // The C of CRUD - Create operation
 
+  // C - Create
+  // R - Read
+  // U - UPDATE
+  // D - DELETE
+
   async create(item: Omit<Item, "id">) {
     // Execute the SQL INSERT query to add a new item to the "item" table
     const [result] = await databaseClient.query<Result>(

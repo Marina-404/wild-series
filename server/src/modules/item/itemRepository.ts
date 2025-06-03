@@ -1,6 +1,8 @@
 import databaseClient from "../../../database/client";
+// envoi des requetes sql a mysql
 
 import type { Result, Rows } from "../../../database/client";
+// result et row pour aider typescript a bien comprendre le resultat des requetes sql
 
 type Item = {
   id: number;

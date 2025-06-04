@@ -10,7 +10,7 @@ type Program = {
 
 class ProgramRepository {
   async readAll() {
-    const [rows] = await databaseClient.query<Rows>("select * from category");
+    const [rows] = await databaseClient.query<Rows>("select * from program");
 
     // Return the array of categories
     return rows as Program[];

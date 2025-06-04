@@ -15,7 +15,7 @@ router.get("/api/categories", categoryActions.browse);
 router.get("/api/categories/:id", categoryActions.read);
 import categoryActions from "./modules/item/category/categoryActions";
 /* ************************************************************************* */
-import programActions from "./modules/program/programActions";
+import programActions from "./modules/item/program/programActions";
 
 router.get("/api/programs", programActions.browse);
 
